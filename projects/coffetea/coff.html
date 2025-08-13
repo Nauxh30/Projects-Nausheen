@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffetea</title>
+    <link rel="stylesheet" href="coff (2).css">
+</head>
+<body>
+    <div class="parent-div" >
+        <div class="nav-heading">
+            <H1>Coffetea</H1>
+
+        </div>
+        <div class="nav-link" id="nav-link-id">
+            <nav>
+                <button onclick="openhome()">HOME</button>
+                <button onclick="openabout()">ABOUT</button>
+                <button onclick="openstores()">STORES</button> 
+                <button onclick="view()"> LOG IN </button>
+            </nav>
+        </div>
+        
+    </div>
+    
+    <div class="parent-log" id="log-sheet" style="display: none;">
+            <h1>Log In</h1>
+            <label for="user"></label>
+            <input type="text" name="username" id="user" placeholder="USERNAME">
+            <label for="pass"></label><br><br>
+            <input type="password" name="password" id="pass" placeholder="PASSWORD">
+            <BR><BR>
+            <button id="log-button">Login</button>
+            <button id="log-cancel" onclick="closeview()">Cancel</button>
+            <h5>Dont Have a Account? <button onclick="openreg()">Register</button></h5>
+    </div>
+        <div class="parent-register" id="parent-register-sheet" style="display: none;">
+             <h1>Register</h1>
+            <label for="newuser"></label>
+            <input type="text" name="newusername" id="user" placeholder="NEW USERNAME">
+            <label for="newpass"></label><br><br>
+            <input type="password" name="newpassword" id="newpass" placeholder="NEW PASSWORD">
+            <BR><BR>
+            <button id="log-button" >Register</button>
+            <button id="log-cancel" onclick="closereg()">Cancel</button>
+
+        </div>
+ <div class="parent-home" id="whole-parent-sheet" >
+    <!-- Top Banner Image -->
+<div class="home-banner">
+  <img src="COFFETEA.png" alt="Coffetea Blonde Banner">
+</div>
+<div class="video-section">
+  <video autoplay muted loop class="promo-video">
+    <source src="2853789-uhd_3840_2160_24fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="video-text">
+    <h1>Relax, Sip, and Enjoy</h1>
+    <p>
+      Discover a space where coffee meets calm. At Coffetea, we offer more than just drinks — 
+      we create an atmosphere of joy, conversation, and inspiration. Every sip tells a story.
+    </p>
+  </div>
+</div>
+<div class="banner-container">
+  <div class="banner-track">
+    <img src="mat.jpeg" alt="Matcha Latte" />
+    <img src="pan.jpg" alt="Pancakes" />
+    <img src="las.jpg" alt="Lasagna" />
+    <img src="bur.jpg" alt="Benedict" />
+    <img src="pas.jpg" alt="Spaghetti" />
+    <img src="des.jpg" alt="Dessert" />
+    <!-- Repeat once more for smooth loop -->
+    <img src="mat.jpeg" alt="Matcha Latte" />
+    <img src="pan.jpg" alt="Pancakes" />
+    <img src="las.jpg" alt="Lasagna" />
+    <img src="bur.jpg" alt="Benedict" />
+    <img src="pas.jpg" alt="Spaghetti" />
+    <img src="des.jpg" alt="Dessert" />
+  </div>
+</div>
+    <div class="first-slide" >
+        <h1 id="first-slide-h1">Experience the Taste of Artfully Brewed Perfection.</h1>
+        <img src="coff1.png" alt="">
+        <br><br><br><br>
+
+    </div>
+ <div class="third-slide">
+    <img src="cof.webp" alt="Coffee with cinnamon">
+    
+    <div class="third-slide-text">
+        <h1>Crafted Moments in Every Sip</h1>
+        <h3>Indulge in the rich blend of coffee and spices. Our hand-crafted brews, paired with the aroma of cinnamon and roasted beans, bring warmth and comfort in every cup.</h3>
+    </div>
+</div>
+    
+
+<div class="second-slide">
+  <div class="second-slide-text">
+    <h1 id="first-slide-h2">Welcome to Coffetea</h1>
+    <h3>
+      Step into our café and experience the perfect harmony of flavors with exceptional coffee, tea, and freshly prepared dishes. 
+      Savor specialty drinks and seasonal treats, perfectly paired with our delicious bites for an unforgettable visit.
+    </h3>
+  </div>
+  <img src="mang.png" alt="Manager or Cafe image">
+</div>
+
+
+
+        
+    </div>
+    <!-- Moving Image Banner -->
+
+
+</div>
+    <div class="about-section" id="about-sheet" style="display: none;">
+    <h1>About Coffetea</h1>
+    <p>
+      At Coffetea, we celebrate the fusion of flavor and comfort. Our mission is to create memorable moments by serving premium coffees, 
+      handcrafted teas, and a selection of gourmet dishes — all with a cozy touch of home. Whether you're here for your morning ritual or 
+      a sweet escape, Coffetea is your delicious destination.
+    </p>
+  </div>
+
+  <!-- Image Grid Section -->
+  <div class="grid-gallery" id="grid-sheet" style="display: none;">
+    <div class="grid-item">
+      <img src="mat.jpeg" alt="Matcha Latte" />
+      <h3>Matcha Latte</h3>
+    </div>
+    <div class="grid-item">
+      <img src="pan.jpg" alt="Banana Pancakes" />
+      <h3>Banana Pancakes</h3>
+    </div>
+    <div class="grid-item">
+      <img src="las.jpg" alt="Lasagna" />
+      <h3>Classic Lasagna</h3>
+    </div>
+    <div class="grid-item">
+      <img src="bur.jpg" alt="Eggs Benedict" />
+      <h3>Eggs Benedict</h3>
+    </div>
+    <div class="grid-item">
+      <img src="pas.jpg" alt="Spaghetti" />
+      <h3>Italian Spaghetti</h3>
+    </div>
+    <div class="grid-item">
+      <img src="des.jpg" alt="Caramel Dessert" />
+      <h3>Caramel Delight</h3>
+    </div>
+  </div> 
+  <!-- STORES PAGE -->
+<div class="stores-section" id="stores-sheet" style="display: none;">
+  <h1>Our Coffetea Stores in Chennai</h1>
+  <p>Visit any of our cozy outlets across the city and experience the perfect blend of coffee, tea, and warmth.</p>
+
+  <div class="store-list">
+    <div class="store">
+      <h3>📍 Coffetea – T. Nagar</h3>
+      <p>123, North Usman Road, T. Nagar, Chennai – 600017</p>
+    </div>
+    <div class="store">
+      <h3>📍 Coffetea – Besant Nagar</h3>
+      <p>45, 2nd Avenue, Besant Nagar Beach Road, Chennai – 600090</p>
+    </div>
+    <div class="store">
+      <h3>📍 Coffetea – Velachery</h3>
+      <p>Plot No. 9, 100 Feet Bypass Road, Velachery, Chennai – 600042</p>
+    </div>
+  </div>
+
+  <!-- Embedded Google Map -->
+  <div class="map-frame">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.2111083190934!2d80.23937837507668!3d13.04263198728793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52677c7bb44ab7%3A0x5b3f7d346e2e40ae!2sT%20Nagar%2C%20Chennai!5e0!3m2!1sen!2sin!4v1654369386353!5m2!1sen!2sin"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+</div> 
+</body>
+<script src="coff.js" > </script>
+
+</html>
